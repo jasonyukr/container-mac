@@ -56,8 +56,8 @@ RUN ./configure
 RUN make
 RUN make install
 
-# Install neofetch
-RUN dnf -y install neofetch
+# Install neofetch and htop
+RUN dnf -y install neofetch htop
 
 # Get username from caller
 ARG username
